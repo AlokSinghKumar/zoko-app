@@ -53,7 +53,7 @@ userSchema.virtual("password")
 //convert the password to encrypted password
 userSchema.methods = {
 
-    auhenticate: function(plainpassword){
+    authenticate: function(plainpassword){
         return this.securePassword(plainpassword) === this.enncry_password;
     },
 

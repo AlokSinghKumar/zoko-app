@@ -11,7 +11,7 @@ const authRoutes = require("./routes/auth.js");
 
 
 app.use(bodyParser.json());
-app.use(cookieParser());
+app.use(cookieParser()); //cookieParser() helps to put or delete some value into a cookie
 app.use(cors());
 
 mongoose.connect(process.env.DATABASE, {   //process.env.DATABASE is to take the fatabase variable form .env file
